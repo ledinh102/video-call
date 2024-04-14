@@ -76,8 +76,8 @@ function Videos(props: { channelName: string; AppID: string }) {
           play={true}
           className="w-full h-full"
         />
-        {remoteUsers.map((user) => (
-          <RemoteUser user={user} />
+        {remoteUsers.map((user, idx) => (
+          <RemoteUser key={idx} user={user} />
         ))}
       </div>
     </div>
